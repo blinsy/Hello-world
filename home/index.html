@@ -1,287 +1,755 @@
-<!DOCTYPE HTML>
-<!--
-	Tessellate by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
+<!DOCTYPE html>
+<html lang="en">
 
-		<title>manguo</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		
+<!--================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 3.1
+	Author: GeeksLabs
+	Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================ -->
 
-		
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+  <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+  <title>MANGUO</title>
 
-	</head>
-	<body>
-	
+  <!-- Favicons-->
+  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <!-- For iPhone -->
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+  <!-- For Windows Phone -->
 
-		<!-- Header -->
-		
+
+  <!-- CORE CSS-->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!-- Custome CSS-->    
+  <link href="css/custom/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+
+
+  
+</head>
+
+
+  <!-- Start Page Loading -->
+  <div id="loader-wrapper">
+      <div id="loader"></div>        
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+  </div>
+  <!-- End Page Loading -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START HEADER -->
+  <header id="header" class="page-topbar">
+        <!-- start header nav-->
+        <div class="navbar-fixed">
+            <nav class="navbar-color">
+                <div class="nav-wrapper"> 
+                <h1 align="center">MANGUO</h1>
+                   
+                    <div class="header-search-wrapper hide-on-med-and-down">
+                       
+                   
+                    <ul class="right hide-on-med-and-down">
+                       
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light notification-button" data-activates="notifications-dropdown"><i class="mdi-social-notifications"><small class="notification-badge">5</small></i>
+                        
+                        </a>
+                        </li>                        
+                        <li><a href="#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-communication-chat"></i></a>
+                        </li>
+                    </ul>
+                     </div>
+                   
+                    <!-- notifications-dropdown -->
+                    <ul id="notifications-dropdown" class="dropdown-content">
+                      <li>
+                        <h5>NOTIFICATIONS <span class="new badge">5</span></h5>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="#!"><i class="mdi-action-add-shopping-cart"></i> A new order has been placed!</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">2 hours ago</time>
+                      </li>
+                      <li>
+                        <a href="#!"><i class="mdi-action-stars"></i> Completed the task</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+                      </li>
+                      <li>
+                        <a href="#!"><i class="mdi-action-settings"></i> Settings updated</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">4 days ago</time>
+                      </li>
+                      <li>
+                        <a href="#!"><i class="mdi-editor-insert-invitation"></i> Director meeting started</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">6 days ago</time>
+                      </li>
+                      <li>
+                        <a href="#!"><i class="mdi-action-trending-up"></i> Generate monthly report</a>
+                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">1 week ago</time>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- end header nav-->
+  </header>
+  <!-- END HEADER -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START MAIN -->
+  <div id="main">
+    <!-- START WRAPPER -->
+    <div class="wrapper">
+
+      <!-- START LEFT SIDEBAR NAV-->
+      <aside id="left-sidebar-nav">
+        <ul id="slide-out" class="side-nav fixed leftside-navigation">
+            <li class="user-details cyan darken-2">
+            <div class="row">
+                <div class="col col s4 m4 l4">
+                    <img src="images/header.jpeg" alt="" class="circle responsive-img valign profile-image">
+                </div>
+                <div class="col col s8 m8 l8">
+                   <form>
+				
+				<input type="submit" class="button" value="login" ></form></br>
+                   
+                    <p class="user-roal">WELCOME</p>
+                </div>
+            </div>
+            </li>
+            <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-view-carousel"></i> Layouts</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="layout-fullscreen.html">Full Screen</a>
+                                </li>
+                                <li><a href="layout-horizontal-menu.html">Horizontal Menu</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="bold"><a href="app-email.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i> Mailbox <span class="new badge">4</span></a>
+            </li>
+            <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> Calender</a>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-invert-colors"></i> CSS</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="css-typography.html">Typography</a>
+                                </li>
+                                <li><a href="css-icons.html">Icons</a>
+                                </li>
+                                <li><a href="css-animations.html">Animations</a>
+                                </li>
+                                <li><a href="css-shadow.html">Shadow</a>
+                                </li>
+                                <li><a href="css-media.html">Media</a>
+                                </li>
+                                <li><a href="css-sass.html">Sass</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-image-palette"></i> UI Elements</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="ui-alerts.html">Alerts</a>
+                                </li>
+                                <li><a href="ui-buttons.html">Buttons</a>
+                                </li>
+                                <li><a href="ui-badges.html">Badges</a>
+                                </li>
+                                <li><a href="ui-breadcrumbs.html">Breadcrumbs</a>
+                                </li>
+                                <li><a href="ui-collections.html">Collections</a>
+                                </li>
+                                <li><a href="ui-collapsibles.html">Collapsibles</a>
+                                </li>
+                                <li><a href="ui-tabs.html">Tabs</a>
+                                </li>
+                                <li><a href="ui-navbar.html">Navbar</a>
+                                </li>
+                                <li><a href="ui-pagination.html">Pagination</a>
+                                </li>
+                                <li><a href="ui-preloader.html">Preloader</a>
+                                </li>
+                                <li><a href="ui-toasts.html">Toasts</a>
+                                </li>
+                                <li><a href="ui-tooltip.html">Tooltip</a>
+                                </li>
+                                <li><a href="ui-waves.html">Waves</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-av-queue"></i> Advanced UI <span class="new badge"></span></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="advanced-ui-chips.html">Chips</a>
+                                </li>
+                                <li><a href="advanced-ui-cards.html">Cards</a>
+                                </li>
+                                <li><a href="advanced-ui-modals.html">Modals</a>
+                                </li>
+                                <li><a href="advanced-ui-media.html">Media</a>
+                                </li>
+                                <li><a href="advanced-ui-range-slider.html">Range Slider</a>
+                                </li>
+                                <li><a href="advanced-ui-sweetalert.html">SweetAlert</a>
+                                </li>
+                                <li><a href="advanced-ui-nestable.html">Shortable & Nestable</a>
+                                </li>
+                                <li><a href="advanced-ui-translation.html">Language Translation</a>
+                                </li>
+                                <li><a href="advanced-ui-highlight.html">Highlight</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a href="app-widget.html" class="waves-effect waves-cyan"><i class="mdi-device-now-widgets"></i> Widgets</a>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-border-all"></i> Tables</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="table-basic.html">Basic Tables</a>
+                                </li>
+                                <li><a href="table-data.html">Data Tables</a>
+                                </li>
+                                <li><a href="table-jsgrid.html">jsGrid</a>
+                                </li>
+                                <li><a href="table-editable.html">Editable Table</a>
+                                </li>
+                                <li><a href="table-floatThead.html">floatThead</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-insert-comment"></i> Forms <span class="new badge"></span></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="form-elements.html">Form Elements</a>
+                                </li>
+                                <li><a href="form-layouts.html">Form Layouts</a>
+                                </li>
+                                <li><a href="form-validation.html">Form Validations</a>
+                                </li>
+                                <li><a href="form-masks.html">Form Masks</a>
+                                </li>
+                                <li><a href="form-file-uploads.html">File Uploads</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan active"><i class="mdi-social-pages"></i> Pages</a>
+                        <div class="collapsible-body">
+                            <ul>                                        
+                                <li><a href="page-contact.html">Contact Page</a>
+                                </li>
+                                <li><a href="page-todo.html">ToDos</a>
+                                </li>
+                                <li><a href="page-blog-1.html">Blog Type 1</a>
+                                </li>
+                                <li><a href="page-blog-2.html">Blog Type 2</a>
+                                </li>
+                                <li><a href="page-404.html">404</a>
+                                </li>
+                                <li><a href="page-500.html">500</a>
+                                </li>
+                                <li class="active"><a href="page-blank.html">Blank</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-shopping-cart"></i> eCommers</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="eCommerce-products-page.html">Products Page</a>
+                                </li>                                        
+                                <li><a href="eCommerce-pricing.html">Pricing Table</a>
+                                </li>
+                                <li><a href="eCommerce-invoice.html">Invoice</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-image-image"></i> Medias</a>
+                        <div class="collapsible-body">
+                            <ul>                                        
+                                <li><a href="media-gallary-page.html">Gallery Page</a>
+                                </li>
+                                <li><a href="media-hover-effects.html">Image Hover Effects</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-account-circle"></i> User</a>
+                        <div class="collapsible-body">
+                            <ul>     
+                                <li><a href="user-profile-page.html">User Profile</a>
+                                </li>                                   
+                                <li><a href="user-login.html">Login</a>
+                                </li>                                        
+                                <li><a href="user-register.html">Register</a>
+                                </li>
+                                <li><a href="user-forgot-password.html">Forgot Password</a>
+                                </li>
+                                <li><a href="user-lock-screen.html">Lock Screen</a>
+                                </li>                                        
+                                
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-editor-insert-chart"></i> Charts</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="charts-chartjs.html">Chart JS</a>
+                                </li>
+                                <li><a href="charts-chartist.html">Chartist</a>
+                                </li>
+                                <li><a href="charts-morris.html">Morris Charts</a>
+                                </li>
+                                <li><a href="charts-xcharts.html">xCharts</a>
+                                </li>
+                                <li><a href="charts-flotcharts.html">Flot Charts</a>
+                                </li>
+                                <li><a href="charts-sparklines.html">Sparkline Charts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="li-hover"><div class="divider"></div></li>
+            <li class="li-hover"><p class="ultra-small margin more-text">MORE</p></li>
+            <li><a href="angular-ui.html"><i class="mdi-action-verified-user"></i> Angular UI  <span class="new badge"></span></a>
+            </li>
+            <li><a href="css-grid.html"><i class="mdi-image-grid-on"></i> Grid</a>
+            </li>
+            <li><a href="css-color.html"><i class="mdi-editor-format-color-fill"></i> Color</a>
+            </li>
+            <li><a href="css-helpers.html"><i class="mdi-communication-live-help"></i> Helpers</a>
+            </li>
+            <li><a href="changelogs.html"><i class="mdi-action-swap-vert-circle"></i> Changelogs</a>
+            </li>                    
+            <li class="li-hover"><div class="divider"></div></li>
+            <li class="li-hover"><p class="ultra-small margin more-text">Daily Sales</p></li>
+            <li class="li-hover">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div class="sample-chart-wrapper">                            
+                            <div class="ct-chart ct-golden-section" id="ct2-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
+        </aside>
+      <!-- END LEFT SIDEBAR NAV-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+      <!-- START CONTENT -->
+      <section id="content">
+        
+        <!--breadcrumbs start-->
+        <div id="breadcrumbs-wrapper">
+            <!-- Search for small screen -->
+            <div img src="images/14.jpeg">
+                
 			<section id="header" class="dark">
 		
 				<header>
+
+
 				
-					<h1><b>PICK UP AND DELIVERY FOR </br>YOUR DRY CLEANING AND LAUNDRY</b></h1>
-					
-				</header>
+					<h1 align="center"><b>PICK UP AND DELIVERY FOR </br>YOUR DRY CLEANING AND LAUNDRY</b></h1>
+
+						<div class="section">
+
+           
+              <div class="divider"></div>
+
+              <div class="masonry-gallery-wrapper" style="position: relative; width: 800px; height: 800px;">                
+                <div class="popup-gallery">
+                  <div class="gallary-sizer"></div>
+                  <div ><img src="images/14.jpg" style="position: absolute; left: 0px; top: 0px;"></a></div>
 				<footer>
-				<form>
-				
-				<input type="submit" class="button" value="login" ></form></br>
-					<a href="#first" class="button scrolly">GET STARTED</a>
-				
+            </div>
 
-				</footer>
-			</section>
-			</div>
 
-		<!-- First -->
+					<a href="#first" class="button scrolly" align="center">GET STARTED</a>
+				
+				</header>
+
+
+			
+
+             <!--start container-->
+      <!-- First -->
 		<div class="container-fluid " id="home">
 			<section id="first" class="main">
 				<header>
 					<div class="container">
-						<h2>HOW MANGUO WORKS</h2>
+						<h5 align="center">HOW MANGUO WORKS</h5></header>
+
 						<p>Manguo is available seven days a week between 8am and 10pm. Schedule a pickup anytime via SMS, on our website (manguo.com), or via our mobile app..</p>
-					</div>
-
-				</header>
 
 
-
-		
-				<div class="content dark style1 featured">
-					<div class="container">
-						<div class="row">
-							<div class="4u 12u(narrow)">
-								<section>
-									<span class="feature-icon"><span class="icon fa-clock-o"></span></span>
-									<header>
-
-										<h3>SCHEDULE</h3>
-									</header>
-									<p>  Manguo is available 7 days a week between 8am and 10pm. Schedule anytime at manguo.com ..</p>
-
-								</section>
-							</div>
-							<div class="4u 12u(narrow)">
-								<section>
-									<span class="feature-icon" class="feature-icon"><span class="icon fa-bolt"></span></span>
-									<header>
-										<h3>PICK UP</h3>
-									</header>
-									<p>Your friendly Manguo Valet will arrive between 8am and 10pm and can answer any questions you have..</p>
-
-								</section>
-							</div>
-							<div class="4u 12u(narrow)">
-								<section>
-									<span class="feature-icon"><span class="icon fa-cloud"></span></span>
-									<header>
-
-										<h3>DELIVERY</h3>
-									</header>
-									<p>Manguo delivers on a consistent and predictable schedule, always between 8am and 10pm..</p>
-								</section>
-							</div>
-						</div>
-						
-
-						
-						<div class="row">
-							<div class="12u">
-								<footer>
-									<a href="#second" class="button scrolly">know more</a>
-								</footer>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</section>
-
-		<!-- Second -->
-			<section id="second" class="main">
-				<header>
-					<div class="container">
-
-						<h2>WORRIED YOU ARE NOT GOING TO BE AT HOME</h2>
-						<p>Manguo has the ability to pick up and deliver when you’re not home. We can provide an over-the-door hook for your Valet to hang clean clothes upon delivery. We also send a visual confirmation upon delivery. If you’re interested in learning more, please email us at help@manguo.com.</p>
-
-						
-					</div>
-				</header>
-				<div class="content dark style2">
-					<div class="container">
-						<div class="row">
-							<div class="4u 12u(narrow)">
-								<section>
-
-									<h2>High quality clothing care for everything in your closet</h2>
-
-									<p>Our services include Dry Cleaning, Launder & Press, Wash & Fold, Hang Dry, Repairs, Leather Cleaning, and Clothing Donations.</p>
+						<p>Our services include Dry Cleaning, Launder & Press, Wash & Fold, Hang Dry, Repairs, Leather Cleaning, and Clothing Donations.</p>
 									<p>We provide a world-class customer experience. If you have questions, text us and a real person on our team will text you back</p>
 									<p>We use "smart scheduling" to always deliver a consistent, high-quality experience that fits within your busy schedule.</p>
 									<p>Skillfully cleaned and pressed. Returned on a hanger. We follow the care label to ensure the best results</p>
-									
-
-									
-									<footer>
-										<a href="#third" class="button scrolly">our prices</a>
-									</footer>
-
-								</section>
-							</div>
-							<div class="8u 12u(narrow)">
-								<div class="row">
-
-									<div class="6u"><a href="#" class="image fit"><img src="images/12.jpg" alt="" /></a></div>
-									<div class="6u"><a href="#" class="image fit"><img src="images/9.jpg" alt="" /></a></div>
-									<div class="6u"><a href="#" class="image fit"><img src="images/13.jpg" alt="" /></a></div>
-									<div class="6u"><a href="#" class="image fit"><img src="images/17.jpg" alt="" /></a></div>
-									<div class="6u"><a href="#" class="image fit"><img src="images/15.jpg" alt="" /></a></div>
-									<div class="6u"><a href="#" class="image fit"><img src="images/5.jpg" alt="" /></a></div>
-
-
-								</div>
-							</div>
-						</div>
 					</div>
-				</div>
-			</section>
 
-		<!-- Third -->
-			<section id="third" class="main">
-				<header>
+         
+
+
+<div id="row-grouping" class="section">
+              <h4 class="header" align="center">OUR PRICES</h4>
+              <div class="row">
+                <div class="col s12 m4 l3">
+                  <p>Our prices are affordable and convenient to all customers..</p>
+                </div>
+                <div class="col s12 m8 l9">
+                  <div id="data-table-row-grouping_wrapper" class="dataTables_wrapper"><div class="dataTables_length" id="data-table-row-grouping_length"><label>Show <div class="select-wrapper initialized"><span class="caret">▼</span><input type="text" class="select-dropdown" readonly="true" data-activates="select-options-42b1fb14-9292-6963-2c46-046b551f0fe4" value="25"><ul id="select-options-42b1fb14-9292-6963-2c46-046b551f0fe4" class="dropdown-content select-dropdown "><li class=""><span>10</span></li><li class=""><span>25</span></li><li class=""><span>50</span></li><li class=""><span>100</span></li></ul><select name="data-table-row-grouping_length" aria-controls="data-table-row-grouping" class="initialized"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></div> entries</label></div><div id="data-table-row-grouping_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="data-table-row-grouping"></label></div><table id="data-table-row-grouping" class="display dataTable" cellspacing="0" width="100%" role="grid" aria-describedby="data-table-row-grouping_info" style="width: 100%;">
+                      <thead>
+                          <tr role="row"><th class="sorting" tabindex="0" aria-controls="data-table-row-grouping" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 50px;">TYPE</th><th class="sorting" tabindex="0" aria-controls="data-table-row-grouping" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 52px;">PRICE</th></tr>
+                      </thead>
+                   
+                      <tfoot>
+                          <tr><th rowspan="1" colspan="1">TYPE</th><th rowspan="1" colspan="1">PRICE</th></tr>
+                      </tfoot>
+                   
+                      <tbody>
+                         
+                   
+                              <td>1 Suit</td>
+                              <td>400</td>
+                              
+                             
+                          </tr><tr role="row" class="even">
+                              <td>1 Coat</td>
+                              <td>250</td>
+                              
+                              
+                          </tr><tr role="row" class="odd">
+                              <td>1 Trouser</td>
+                              <td>200</td>
+                              
+                             
+                          </tr><tr role="row" class="even">
+                              <td>1 Shirt</td>
+                              <td>100</td>
+                              
+                             
+                          </tr><tr role="row" class="odd">
+                              <td>1 sweater</td>
+                              <td>250</td>
+                              
+                             
+                          </tr><tr role="row" class="even">
+                              <td>1 Dress</td>
+                              <td>200</td>
+                              
+                              
+                          </tr><tr role="row" class="odd">
+                              <td>1 Duvet</td>
+                              <td>600</td>
+                              
+                              
+                          </tr><tr role="row" class="even">
+                              <td>1 Blanket</td>
+                              <td>500</td>
+                              
+                          </tr><tr role="row" class="odd">
+                              <td>1 Hat</td>
+                              <td>100</td>
+                              
+                             
+                           </tr><tr role="row" class="even">
+                              <td>1 T-Shirt</td>
+                              <td>100</td>
+                             
+                          </tr><tr role="row" class="odd">
+                              <td>1 Bed cover</td>
+                              <td>100</td>
+                              
+                              
+                          </tr><tr role="row" class="even">
+                              <td>Wedding gown</td>
+                              <td>1300</td>
+                              
+                              
+                          </tr><tr role="row" class="odd">
+                              <td>Graduation gown</td>
+                              <td>400</td>
+                              
+                             
+                          </tr><tr role="row" class="even">
+                              <td>Skirt</td>
+                              <td>250</td>
+                              
+                             
+                          </tr><tr role="row" class="odd">
+                              <td>Tie</td>
+                              <td>50</td>
+                              
+                          </tr><tr role="row" class="even">
+                              <td>Blouse</td>
+                              <td>100</td>
+                              
+                             
+                      
+                             
+                          </tr></tbody>
+                  </table></div>
+                </div>
+              </div>
+            </div>
+
+
+       
+				
+				
+
+
+
+
+
+				
+          <!-- Floating Action Button -->
+            <div class="fixed-action-btn" style="bottom: 50px; right: 19px;">
+                <a class="btn-floating btn-large">
+                  <i class="mdi-action-stars"></i>
+                </a>
+                <ul>
+                  <li><a href="css-helpers.html" class="btn-floating red"><i class="large mdi-communication-live-help"></i></a></li>
+                  <li><a href="app-widget.html" class="btn-floating yellow darken-1"><i class="large mdi-device-now-widgets"></i></a></li>
+                  <li><a href="app-calendar.html" class="btn-floating green"><i class="large mdi-editor-insert-invitation"></i></a></li>
+                  <li><a href="app-email.html" class="btn-floating blue"><i class="large mdi-communication-email"></i></a></li>
+                </ul>
+            </div>
+            <!-- Floating Action Button -->
+        </div>
+        <!--end container-->
+      </section>
+      <!-- END CONTENT -->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- START RIGHT SIDEBAR NAV-->
+      <aside id="right-sidebar-nav">
+        <ul id="chat-out" class="side-nav rightside-navigation">
+            <li class="li-hover">
+            <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
+            <div id="right-search" class="row">
+                <form class="col s12">
+                    <div class="input-field">
+                        <i class="mdi-action-search prefix"></i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Search</label>
+                    </div>
+                </form>
+            </div>
+            </li>
+            <li class="li-hover">
+                <ul class="chat-collapsible" data-collapsible="expandable">
+                <li>
+                    <div class="collapsible-header teal white-text active"><i class="mdi-social-whatshot"></i>Recent Activity</div>
+                    <div class="collapsible-body recent-activity">
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-add-shopping-cart"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">just now</a>
+                                <p>Jim Doe Purchased new equipments for zonal office.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-device-airplanemode-on"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">Yesterday</a>
+                                <p>Your Next flight for USA will be on 15th August 2015.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">5 Days Ago</a>
+                                <p>Natalya Parker Send you a voice mail for next conference.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-store"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">Last Week</a>
+                                <p>Jessy Jay open a new store at S.G Road.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">5 Days Ago</a>
+                                <p>Natalya Parker Send you a voice mail for next conference.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header light-blue white-text active"><i class="mdi-editor-attach-money"></i>Sales Repoart</div>
+                    <div class="collapsible-body sales-repoart">
+                        <div class="sales-repoart-list  chat-out-list row">
+                            <div class="col s8">Target Salse</div>
+                            <div class="col s4"><span id="sales-line-1"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Payment Due</div>
+                            <div class="col s4"><span id="sales-bar-1"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Total Delivery</div>
+                            <div class="col s4"><span id="sales-line-2"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Total Progress</div>
+                            <div class="col s4"><span id="sales-bar-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header red white-text"><i class="mdi-action-stars"></i>Favorite Associates</div>
+                    <div class="collapsible-body favorite-associates">
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Eileen Sideways</p>
+                                <p class="place">Los Angeles, CA</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Zaham Sindil</p>
+                                <p class="place">San Francisco, CA</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Renov Leongal</p>
+                                <p class="place">Cebu City, Philippines</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Weno Carasbong</p>
+                                <p>Tokyo, Japan</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Nusja Nawancali</p>
+                                <p class="place">Bangkok, Thailand</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                </ul>
+            </li>
+        </ul>
+      </aside>
+      <!-- LEFT RIGHT SIDEBAR NAV-->
+
+    </div>
+    <!-- END WRAPPER -->
+
+  </div>
+  <!-- END MAIN -->
+
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START FOOTER -->
+
+
+
+  <!-- Footer -->
 			
-					<div class="container">
-						<h2>Our prices are affordable and convenient to all customers.</p>
-					</div>
-				</header>
-				<div class="content dark style3">
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+        <span>Copyright © MANGUO <a class="grey-text text-lighten-4" href="http://themeforest.net/user/geekslabs/portfolio?ref=geekslabs" target="_blank"></a> All rights reserved.</span>
+        <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="http://geekslabs.com/">MANGUO</a></span>
+        </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
 
-					<div class="container">
 
-						<span class="image featured"><img src="images/14.jpg"  alt="" /></span>
-						
-<div class="container-fluid">
-<div class="row">
-	<div class="col-sm-12">
-	<table class="table table-stripped table-bordered table-hover">
-		<tr class="danger">
-			<td>TYPE</td><td>PRICE</td>
-		</tr>
-<tr class="success">
-			<td>All shirts </td><td>100</td>
-		</tr>
-		<tr class="active">
-			<td>Shorts</td><td>100</td>
-		</tr>
-		<tr class="warning">
-			<td>blanket</td><td>1000</td>
-		</tr>
 
-<tr class="warning">
-			<td>pants</td><td>300</td>
-		</tr>
-		<tr class="warning">
-			<td>skirts</td><td>200</td>
-		</tr>
-		<tr class="warning">
-			<td>sweaters</td><td>300</td>
-		</tr>
-		<tr class="warning">
-			<td>jackets</td><td>300</td>
-		</tr>
-		<tr class="warning">
-			<td>socks</td><td>50</td>
-		
-		<tr class="warning">
-			<td>vest</td><td>100</td>
-		</tr>
-		<tr class="warning">
-			<td>dresses</td><td>200</td>
-		</tr>
-		<tr class="warning">
-			<td>coats</td><td>200</td>
-		</tr>
-	</table>	
-	</div>
-</div>
-	
-</div>
+    <!-- ================================================
+    Scripts
+    ================================================ -->
+    
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>    
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <!--prism
+    <script type="text/javascript" src="js/prism/prism.js"></script>-->
+    <!--scrollbar-->
+    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- chartist -->
+    <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>   
+    
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <!--custom-script.js - Add your own theme custom JS-->
+    <script type="text/javascript" src="js/custom-script.js"></script>
+    
+</body>
 
-									<a href="#fourth" class="button scrolly">Get in touch</a>
-								</footer>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</section>
-
-		
-
-		<!-- Fourth -->
-			<section id="fourth" class="main">
-				<header>
-					<div class="container">
-						<h2>CONTACT US</h2>
-						<p>We provide a world-class customer experience. If you have questions, text us and a real person on our team will text you back..</p>
-				</header>
-				<div class="content style4 featured">
-					<div class="container 75%">
-						<form method="post" action="#">
-							<div class="row 50%">
-								<div class="6u 12u(mobile)"><input type="text" placeholder="Name" /></div>
-								<div class="6u 12u(mobile)"><input type="text" placeholder="Email" /></div>
-							</div>
-							<div class="row 50%">
-								<div class="12u"><textarea name="message" placeholder="Message"></textarea></div>
-							</div>
-							<div class="row">
-								<div class="12u">
-									<ul class="actions">
-										<li><input type="submit" class="button" value="Send Message" /></li>
-										<li><input type="reset" class="button alt" value="Clear Form" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</section>
-
-		<!-- Footer -->
-			<section id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-				<div class="copyright">
-					<ul class="menu">
-						<li>&copy; MANGUO. All rights reserved.</li>
-					</ul>
-				</div>
-			</section>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>>>
+</html>ml>
